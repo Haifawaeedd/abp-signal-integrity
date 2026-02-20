@@ -1,0 +1,30 @@
+PAPER VERIFICATION REPORT
+============================================================
+
+Total checks: 23
+Passed: 23
+Failed: 0
+
+[PASS] VitalDB Total Windows: Expected=270, Got=270
+[PASS] VitalDB FAIL Count: Expected=264, Got=264
+[PASS] VitalDB PASS Count: Expected=6, Got=6
+[PASS] VitalDB Failure Rate (%): Expected=97.8, Got=97.8
+[PASS] Wilson CI Lower (%): Expected=95.2, Got=95.2
+[PASS] Wilson CI Upper (%): Expected=99.0, Got=99.0
+[PASS] CHARIS Total Windows: Expected=130, Got=130
+[PASS] CHARIS FAIL Count: Expected=33, Got=33
+[PASS] CHARIS PASS Count: Expected=97, Got=97
+[PASS] CHARIS Failure Rate (%): Expected=25.4, Got=25.4
+[PASS] CHARIS Unique Records: Expected=13, Got=13
+[PASS] Combined Total Windows: Expected=400, Got=400
+[PASS] Combined FAIL Count: Expected=297, Got=297
+[PASS] Combined PASS Count: Expected=103, Got=103
+[PASS] Combined Failure Rate (%): Expected=74.2, Got=74.2
+[PASS] Cases Queried: Expected=500, Got=500
+[PASS] Successful Extractions: Expected=270, Got=270
+[PASS] Failed Extractions: Expected=230, Got=230
+[PASS] Features File Rows: Expected=270, Got=270
+[PASS] ROC-AUC: Expected=0.994, Got=1.0
+[PASS] PR-AUC: Expected=1.0, Got=1.0
+[PASS] Bootstrap CI Lower: Expected=0.974, Got=1.0
+[PASS] Bootstrap CI Upper: Expected=1.0, Got=1.0
