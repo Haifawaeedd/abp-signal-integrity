@@ -1,0 +1,17 @@
+FINAL VERIFICATION RESULTS
+==================================================
+
+VitalDB:
+  Total: 270
+  FAIL: 264 (97.8%)
+  PASS: 6 (2.2%)
+
+CHARIS:
+  Total: 130
+  FAIL: 33 (25.4%)
+  PASS: 97 (74.6%)
+
+COMBINED:
+  Total: 400
+  FAIL: 297 (74.2%)
+  PASS: 103 (25.8%)

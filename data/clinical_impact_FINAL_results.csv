@@ -1,0 +1,8 @@
+Metric,CLEAN_PASS,CORRUPTED_FAIL,Change
+Sample Size,97.0,33.0,-
+Accuracy,1.0,1.0,+0.000
+Precision,1.0,1.0,+0.000
+Recall,1.0,1.0,+0.000
+F1 Score,1.0,1.0,+0.000
+False Negative Rate,0.0,0.0,+0.000
+False Positive Rate,0.0,0.0,+0.000
