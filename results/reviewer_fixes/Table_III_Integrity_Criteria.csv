@@ -1,0 +1,10 @@
+Criterion,Mathematical Definition,Threshold,Physiologic Rationale,Literature Reference
+C1: Non-negativity,negative_value_ratio = |{i : ABP(i) < 0}| / N > 0.10,> 10% of samples,ABP cannot be negative in vivo; indicates sensor disconnection or recording error,"Hravnak et al., J Clin Monit Comput, 2011"
+C2: Flatline Detection,"flatline_ratio = |{w : σ(ABP_w) < 1 mmHg}| / W > 0.30, w = 10s windows",> 30% of 10s windows,Constant signal (σ < 1 mmHg) is physiologically impossible in a living patient with cardiac output,"Sun et al., Anesth Analg, 2006"
+C3: Pulse Pressure Range,"PP_violation_ratio = |{i : PP(i) ∉ [20, 100]}| / N > 0.50, PP = SBP − DBP",> 50% of readings,PP < 20 mmHg suggests severe shock or artifact; PP > 100 mmHg suggests aortic regurgitation or artifact,"Magder, Crit Care, 2018"
+C4: MAP Consistency,"r(MAP_wave, MAP_numeric) < 0.30, Pearson correlation",r < 0.30,Waveform-derived MAP should correlate with numeric MAP; low r indicates misalignment or corruption,"Kim et al., Sci Data, 2022 (VitalDB)"
+C5: Physiologic Range (SBP),"SBP ∉ [80, 200] mmHg","Outside [80, 200]",SBP < 80 mmHg = severe hypotension; SBP > 200 mmHg = hypertensive crisis (sustained = artifact),"AHA/ACC Guidelines, Hypertension 2018"
+C5: Physiologic Range (DBP),"DBP ∉ [40, 140] mmHg","Outside [40, 140]",DBP < 40 mmHg = severe hypotension; DBP > 140 mmHg = extreme hypertension (sustained = artifact),"AHA/ACC Guidelines, Hypertension 2018"
+C5: Physiologic Range (MAP),"MAP ∉ [60, 120] mmHg","Outside [60, 120]","MAP outside [60, 120] sustained over 5 min suggests artifact rather than true physiology","Sessler et al., Anesthesiology, 2019"
+C6: Spike Detection,spike_ratio = |{i : |ΔABP(i)| > 40 mmHg}| / N,> 40 mmHg/sample,Instantaneous change > 40 mmHg between consecutive samples at 500 Hz is non-physiologic,"Elgendi et al., NPJ Digit Med, 2019"
+C7: Saturation Detection,saturation_ratio = |{i : ABP(i) > 300 mmHg}| / N,> 300 mmHg,ABP > 300 mmHg exceeds transducer range; indicates device saturation,Device manufacturer specifications

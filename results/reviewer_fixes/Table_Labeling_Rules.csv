@@ -1,0 +1,6 @@
+Rule,Condition,Label,Priority,Description
+R1,negative_value_ratio > 0.10,FAIL,Critical,> 10% negative pressure values
+R2,flatline_ratio > 0.30,FAIL,Critical,> 30% flatline segments (10s windows)
+R3,PP_violation_ratio > 0.50,FAIL,Critical,> 50% pulse pressure out of range
+R4,PP_negative_ratio > 0.05,FAIL,Critical,> 5% negative pulse pressure
+R5,r_MAP < 0.30,FAIL,Critical,Poor waveform-numeric MAP correlation

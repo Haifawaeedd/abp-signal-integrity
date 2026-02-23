@@ -1,0 +1,36 @@
+
+REVIEWER FIX SUMMARY
+====================
+
+FIX 1: Integrity Criteria (Table III)
+  ✅ 9 criteria formally defined with mathematical notation
+  ✅ Physiologic rationale provided for each
+  ✅ Literature references included
+  ✅ 5 labeling rules with thresholds
+
+FIX 2: Feature Importance Analysis
+  ✅ Top feature: PP_extreme_ratio (0.1974)
+  ✅ Top 5 features explain 64.5% of importance
+  ✅ 10 features needed for 90% cumulative importance
+  ✅ Integrity features dominate (0.131 total)
+
+FIX 3: Benchmark Comparison
+  ✅ Random Forest vs Rule-Based vs Single Feature vs Logistic Regression
+  ✅ RF ROC-AUC: 0.994
+  ✅ LR ROC-AUC: 0.968
+  ✅ 5-fold CV stability confirmed
+
+FIX 4: Downstream Impact
+  ✅ IBI (Integrity Burden Index) computed for all windows
+  ✅ Bootstrap 95% CI: [0.974, 1.000]
+  ✅ Feature group analysis: Integrity > Physiologic > Time-domain > Alignment
+  ✅ Gating threshold: IBI <= 0.598 (cleanest 20%)
+
+FILES GENERATED:
+  /home/ubuntu/reviewer_fixes_output/Table_III_Integrity_Criteria.csv
+  /home/ubuntu/reviewer_fixes_output/Table_Labeling_Rules.csv
+  /home/ubuntu/reviewer_fixes_output/Table_Feature_Importance_Top20.csv
+  /home/ubuntu/reviewer_fixes_output/Table_Benchmark_Comparison.csv
+  /home/ubuntu/reviewer_fixes_output/Fig_Feature_Importance.png/pdf
+  /home/ubuntu/reviewer_fixes_output/Fig_Benchmark_Comparison.png/pdf
+  /home/ubuntu/reviewer_fixes_output/Fig_Downstream_Impact.png/pdf
